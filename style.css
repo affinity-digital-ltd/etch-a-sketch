@@ -1,0 +1,11 @@
+.container div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black; 
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
