@@ -13,7 +13,7 @@
   --gridSize: 16;
 }
 
-.gameContainer {
+.game_container {
   border-width: 75px;
   border-color: rgb(216, 44, 44);
   border-radius: 20px;
@@ -28,7 +28,7 @@
   z-index: 1;
 }
 
-.gridDivs {
+.grid_divs {
   border: 1px solid black;
   box-sizing: border-box;
 }

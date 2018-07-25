@@ -9,7 +9,7 @@ const gameContainer = document.querySelector('div[data-behavior="container"]');
 let isRainbowPen = false
 
 sizeButton.addEventListener('click', () => {
-  makeGrid()
+  changeSize()
 });
 
 rainbowButton.addEventListener('click', () => {
@@ -28,15 +28,15 @@ window.onload = function() {
 function grid(size) {
   for(let i = 1; i <= (size * size); i++) {
     let gridCell = document.createElement('div');
-    gridCell.classList.add('gridDivs');
+    gridCell.classList.add('grid_divs');
     gameContainer.appendChild(gridCell);
     gridCell.addEventListener('mouseover', () => colorGridCell(gridCell));
   }
 }
 
-//Resets the game and prompts the user for a numerical input for the size of the new grid.
-function makeGrid(gridSize) {
-  gridSize = prompt('How many squares would you like on each axis of the new grid?', 16, )
+//Prompts the user for a numerical input for the size of the new grid which is created.
+function changeSize() {
+  let gridSize = prompt('How many squares would you like on each axis of the new grid?', 16, )
   document.body.style.setProperty('--gridSize', gridSize);
   gameContainer.innerHTML = '';
   grid(gridSize);
