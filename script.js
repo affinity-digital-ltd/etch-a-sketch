@@ -36,13 +36,11 @@ function grid(size) {
 
 //Prompts the user for a numerical input for the size of the new grid which is created.
 function changeSize() {
-  let gridSize = prompt('How many squares would you like on each axis of the new grid?', 16, )
+  const gridSize = prompt('How many squares would you like on each axis of the new grid?', 16, )
   document.body.style.setProperty('--gridSize', gridSize);
   gameContainer.innerHTML = '';
   grid(gridSize);
 }
-
-
 
 //Generate colours for pointer - default is black
 function penColor() {
@@ -65,31 +63,3 @@ resetButton.onclick = reloadPage;
 function reloadPage () {
   window.location.reload();
 }
-
-
-
-
-  
-
-
-
-
-
- 
-
-
-  
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-     
