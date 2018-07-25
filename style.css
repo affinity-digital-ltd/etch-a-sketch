@@ -1,0 +1,77 @@
+/* trade-winds-regular - latin */
+@font-face {
+  font-family: 'Trade Winds';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/trade-winds-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Trade Winds'), local('TradeWinds'),
+       url('../fonts/trade-winds-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/trade-winds-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+
+:root {
+  --gridSize: 16;
+}
+
+.game_container {
+  border-width: 75px;
+  border-color: rgb(216, 44, 44);
+  border-radius: 20px;
+  border-style: solid;
+  width: 700px;
+  height: 650px;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(var(--gridSize), 1fr);
+  grid-template-rows: repeat(var(--gridSize), 1fr);
+  z-index: 1;
+}
+
+.grid_divs {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.paint {
+  background-color: var(--paint);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Trade Winds', cursive;
+}
+
+
+.btn {
+  font-size: 20px;
+  font-family: 'Trade Winds', cursive;
+  color: rgba(4, 6, 94, 0.836);
+  background-color:rgba(233, 236, 5, 0.966);
+  border-radius: 5px;
+  width: 90px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 2;
+  position: absolute;
+}
+
+.btn__reset {
+  right: 255px;
+}
+
+.btn__rainbow {
+  left: 355px;
+}
+
+.btn__black {
+  left: 255px;
+}
+
+.btn__size {
+  right: 355px; 
+}
+
+
